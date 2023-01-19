@@ -1,0 +1,26 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "This is a boilerplate",
+  "scripts": {
+    
+    "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
+    "about": "rm -rf dev-serve && parcel src/about.html --dist-dir dev-serve",
+    "skill": "rm -rf dev-serve && parcel src/skill.html --dist-dir dev-serve",
+    "work": "rm -rf dev-serve && parcel src/work.html --dist-dir dev-serve",
+    "contact": "rm -rf dev-serve && parcel src/contact.html --dist-dir dev-serve",
+    "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
+
+    "publish": "gh-pages -d build"
+  },
+  "author": "Maha",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

@@ -1,0 +1,351 @@
+@import "variables";
+@import "base";
+
+body {
+
+  background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-shadow: inset 0px 0px 0px 100vmax rgba(0, 0, 0, 0.219);
+
+
+}
+
+section {
+  li {
+    list-style: none;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+padding-bottom: 30px;
+
+  li {
+    border-bottom: 3px solid $secondary;
+    width: 100%;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+  }
+  &hover{
+    font-size: 4rem;
+    color: $merry;
+    transition: 0.8s;
+  }
+}
+.headings {
+  display: none;
+}
+.navbar {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  font-size: 1.3rem;
+  color: $merry;
+  text-shadow: 0 15px 25px $perry;
+  
+}
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  margin-left: 45px;
+
+  li {
+    margin: 30px;
+  }
+  a {
+    color: $primary;
+  }
+}
+section{
+  box-shadow: 10px 15px 25px $danger;
+.infobar {
+position: absolute;
+top: 0;
+right: 0;
+  background-color: $primary;
+ height: 35vh;
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+ margin-bottom: 12rem;
+
+ 
+
+  li {
+    list-style: none;
+  }
+  .Me {
+    
+    font-size: 7rem;
+        color: $danger;
+        font-family: "Monoton";
+        margin-left: 35px;
+        animation: rubberband 3s infinite ease-out;
+       
+  }
+  @keyframes rubberband {
+    0% {
+      transform: scaleX(1px) scaleY(1);
+    }
+    40% {
+      transform: scaleX(1.12px) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    65% {
+      transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+      transform: scaleX(0.9) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+
+  .me {
+    color: $merry;
+    font-size: 2.2rem;
+ 
+    font-family: 'Monoton';
+    margin-bottom: 5px;   
+    a{
+      text-decoration: none;
+      color: $danger;
+      margin-left: 40px;
+    } 
+  }
+
+  .wd {
+    color: $secondary;
+        margin-left: 15px;
+        font-size: 1.8rem;
+        font-family: "Open Sans", sans-serif;
+        padding-bottom: 20px;
+  }
+}
+}
+
+
+li a:hover {
+  color: $perry;
+  cursor: cell;
+}
+
+@media screen and (min-width: 1025px) {
+
+
+    button{display: none;}
+  .headings{
+    display: block;
+  }
+
+  span {
+    display: none;
+  }
+  body {
+    background-image:
+    url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 280px;
+    width: 30%;
+    margin-left: 50rem;
+    font-size: 1.8rem;
+    color: $merry;
+    
+    p {
+      color: rgba(255, 140, 140, 0.616);
+      margin-left: 10px;
+      margin-top: 30px;
+      font-weight: 400;
+      font-family: "Open Sans";
+      text-decoration: overline;
+    }
+    h1 {
+      
+      font-size: 5rem;
+    }
+    b {
+     
+      font-size: 4.5rem;
+    }
+    h2 {
+      
+      font-size: 5rem;
+    }
+    .font {
+      font-family: "Monoton";
+      font-size: 4.5rem;
+    }
+  }
+  h1:hover {
+   color:$danger;
+   font-size: 6rem;
+   transition: 0.8s;text-shadow: 0 15px 25px $perry;
+  }
+  h2:hover {
+    color:$danger;
+    font-size: 6rem;
+    transition: 0.8s;text-shadow: 0 15px 25px $perry;
+  }
+
+  b:hover {
+    color:$danger;
+    font-size: 5.1rem;
+    transition: 0.8s;text-shadow: 0 15px 25px $perry;
+   
+  }
+  @keyframes rubberband {
+    0% {
+      transform: scaleX(1px) scaleY(1);
+    }
+    40% {
+      transform: scaleX(1.12px) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    65% {
+      transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+      transform: scaleX(0.9) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    background-color: $primary;
+   height: 100vh;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+  box-shadow: 10px 15px 25px $danger;
+ 
+  
+    .infobar {display: block;
+   
+      .Me {
+        font-size: 7rem;
+        color: $danger;
+        font-family: "Monoton";
+        margin-left: 10px;
+        animation: rubberband 3s infinite ease-out;
+       
+      }
+      .me {
+        color: $danger;
+       margin-left: -20px;
+        
+        a {
+          font-family: "Monoton";
+          font-size: 2rem;
+          margin-right: 50px;
+          padding-right: 10px;
+        }
+      }
+    
+      .wd {
+        font-size: 1.1rem;
+        color: $secondary;
+        margin-left: 15px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+   
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $danger;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
+      font-size: 2rem;
+      transition: 0.8s;
+    }
+  }
+  .social {
+    
+    display: flex;
+    margin-left: 15px;
+    
+  
+    li {
+      margin: 7px;
+    }
+    &hover{font-size: 2.8rem;
+    transition: 0.8s;}
+  }
+} 
+.links {
+  display: block;
+  padding-top: 370px;
+
+  li {
+    margin-top: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $secondary;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+a{
+  padding-top: 15px;
+
+}
+  }
+}
+
+}

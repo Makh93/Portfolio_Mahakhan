@@ -1,0 +1,322 @@
+@import "variables";
+@import "base";
+
+
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-repeat: no-repeat;
+   background-size: auto;   background-position:center;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+
+  .navbar {
+    position: fixed;
+    top: 2%;
+    right: 13%;
+    font-size: 2rem;
+    a{color: $merry;}
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+    h1 {
+      font-size: 3rem;
+         margin-top: 5rem;
+         margin-right: 400px;
+         padding-left: 20px;
+         margin-left: 500px;
+         color: $perry;
+         width: 100%;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      width: 60%;
+      margin-top: 10px;
+      margin-right: 47%;
+      margin-left:180px;   
+      color: $merry;
+    }
+    form {
+      font-family: "Open sans";
+      width: 100%;
+      margin-left: 180px;
+      margin-top: 3rem;
+      margin-right: 50px;
+      
+  
+      input {
+        font-size: 1.3rem;
+        padding: 20px 40px;
+        margin-bottom: 10px;
+        width: 40%;
+        font-family: "Open sans";
+        &:hover {
+          border: 2px solid $perry;
+        }
+      }
+      #input-subject {
+        width: 80.5%;
+        font-family: "Open sans";
+        &:hover {
+          border: 2px solid $perry;
+        }
+      }
+      textarea {
+        height: 200px;
+        width: 80.5%;
+        font-size: 1.3rem;
+        padding-top: 20px;
+        padding-left: 40px;
+        font-family: "Open sans";
+  
+        &:hover {
+          border: 2px solid $perry;
+        }
+      }
+  
+      #input-submit {
+          font-size: 1rem;
+        border: 3px solid $secondary;
+        color: $secondary;
+        background-color: $primary;
+        width: 12rem;
+      }
+    }
+  }
+  .gm {
+  display: none;
+  }
+
+@media screen and (min-width:1024px) {
+    
+
+body {
+  
+  background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 0px 100vmax rgba(0, 0, 0, 0.363);
+}
+.navbar {
+  display: none;
+}
+/*SIDEBAR*/
+
+.sidebar { display: block;
+  position: fixed;
+  top: 0;
+  background-color: $primary;
+  height: 100vh;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 10px 15px 25px $danger;
+
+  .infobar {
+    display: block;
+
+    .Me {
+      font-size: 7rem;
+      color: $danger;
+      font-family: "Monoton";
+      margin-left: 5px;
+      animation: rubberband 3s infinite ease-out;
+    }
+    .me {
+      color: $merry;
+
+      font-family: "Monoton";
+      color: $danger;
+      a {
+        font-family: "Monoton";
+        margin-left: 10px;
+        font-size: 2rem;
+      }
+    }
+
+    .wd {
+      font-size: 1.1rem;
+      color: $secondary;
+      margin-left: 5px;
+      font-family: "Open Sans", sans-serif;
+      margin-left: 10px;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: $danger;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
+      font-size: 2rem;
+      transition: 0.8s;
+    }
+  }
+  .social {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    li {
+      margin: 5px;
+    }
+    &hover {
+      font-size: 2.5rem;
+      transition: 0.8s;
+    }
+  }
+}
+.links {
+  display: block;
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 3px solid $secondary;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@keyframes rubberband {
+0% {
+  transform: scaleX(1.3) scaleY(1)  rotate(360deg);}
+
+40% {
+  transform: scaleX(1.12) scaleY(0.75);
+}
+55% {
+  transform: scaleX(0.85) scaleY(1);
+}
+65% {
+  transform: scaleX(1.09) scaleY(0.85);
+}
+75% {
+  transform: scaleX(1) scaleY(1);
+}
+90% {
+  transform: scaleX(1.05) scaleY(0.95);
+}
+100% {
+  transform: scaleX(1.2) scaleY(1);
+}}
+main {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+min-height: 100vh;
+  margin-left: 20px;
+  padding-bottom: 5rem;
+
+  h1 {
+    font-size: 3rem;
+    
+       margin-right: 400px;
+       padding-left: 20px;
+       margin-left: 500px;
+       color: $perry;
+       width: 100%;
+  }
+
+
+  h1 {
+    font-size: 4rem;
+    margin-left: 50%;
+    width: 100%;
+    
+  }
+  p {
+    font-size: 1.5rem;
+    width: 40%;
+    margin-top: 10px;
+    margin-right: 35rem;
+    margin-left: 2rem;
+  }
+  form {
+    font-family: "Open sans";
+    width: 45%;
+    margin-right: 40rem;
+    margin-top: 3rem;
+
+    input {
+      font-size: 1.3rem;
+      padding: 20px 40px;
+      margin-bottom: 10px;
+      width: 40%;
+      font-family: "Open sans";
+      background-color: $primary;
+      border: none;
+      border-radius: 10px;
+      &:hover {
+        border: 2px solid $perry;
+       
+      }
+    }
+    #input-subject {
+      width: 80.5%;
+      font-family: "Open sans";
+      &:hover {
+        border: 2px solid $perry;
+     
+      }
+    }
+    textarea {
+      height: 200px;
+      width: 80.5%;
+      font-size: 1.3rem;
+      padding-top: 20px;
+      padding-left: 40px;
+      font-family: "Open sans";
+      background-color: $primary;
+      border: none;
+      border-radius: 10px;
+    color: $perry;
+      &:hover {
+        border: 2px solid $perry;
+      }
+    }
+
+    #input-submit {
+        font-size: 1.4rem;
+      border: 3px solid $secondary;
+      color: $perry;
+      background-color: $primary;
+      width: 15rem;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+}
+.gm {
+    display: block;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  bottom: 0%;
+}
+}

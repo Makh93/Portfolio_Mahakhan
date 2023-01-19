@@ -1,0 +1,380 @@
+@import "variables";
+@import "base";
+
+body {
+  background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  height: 100vh;
+}
+
+.navbar {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  font-size: 2rem;
+  a {
+    color: $merry;
+  }
+}
+
+.sidebar {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 3.5rem;
+    color: $merry;
+    margin-left: 30px;
+    margin-top: 150px;
+    font-style: italic;
+    &:hover {
+      font-size: 4rem;
+      color: $danger;
+      text-decoration: overline;
+    }
+  }
+
+  .project1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+  }
+  div {
+    width: 150px;
+    height: 150px;
+    border: 5px solid $perry;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin: 20px;
+    a {
+      text-decoration: none;
+      color: rgba(240, 248, 255, 0);
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        font-size: 4rem;
+        color: $secondary;
+        background-color: $danger;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        transition: 0.5s;
+        padding: 35px 35px;
+      }
+    }
+  }
+  div:nth-of-type(1) {
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div:nth-of-type(2) {
+    background-image: url(../Images/sweetBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div:nth-of-type(3) {
+    background-image: url(../Images/black-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.project2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  div:nth-of-type(1) {
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+  }
+
+  div:nth-of-type(2) {
+    background-image: url(../Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+  }
+  div:nth-of-type(3) {
+    background-image: url(../Images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+  }
+}
+/*DESKTOP VERSION*/
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .navbar {
+    display: none;
+  }
+  .overlay{background-color:  rgba(0, 0, 0, 0.349);
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 20px;
+    }
+  /*SIDEBAR*/
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: $primary;
+    height: 100vh;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 10px 15px 25px $danger;
+
+    .infobar {
+      display: block;
+
+      .Me {
+        font-size: 7rem;
+        color: $danger;
+        font-family: "Monoton";
+        margin-left: 5px;
+        animation: rubberband 3s infinite ease-out;
+      }
+      .me {
+        color: $merry;
+
+        font-family: "Monoton";
+        color: $danger;
+        a {
+          font-family: "Monoton";
+          margin-left: 10px;
+          font-size: 2rem;
+        }
+      }
+
+      .wd {
+        font-size: 1.1rem;
+        color: $secondary;
+        margin-left: 5px;
+        font-family: "Open Sans", sans-serif;
+       margin-left: 10px;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: $danger;
+      font-family: "Open Sans", sans-serif;
+
+      &:hover {
+        font-size: 2rem;
+        transition: 0.8s;
+      }
+    }
+    .social {
+      display: flex;
+      margin-left: 15px;
+      margin-bottom: 30px;
+      li {
+        margin: 5px;
+      }
+      &hover {
+        font-size: 2.5rem;
+        transition: 0.8s;
+      }
+    }
+  }
+  .links {
+    display: block;
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      border-bottom: 3px solid $secondary;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @keyframes rubberband {
+    0% {
+      transform: scaleX(1.3) scaleY(1) rotate(360deg);
+    }
+
+    40% {
+      transform: scaleX(1.12) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    65% {
+      transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+      transform: scaleX(1) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1.2) scaleY(1);
+    }
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1 {
+      font-size: 3.5rem;
+      color: $merry;
+      margin-left: 30px;
+      margin-top: 50px;
+      font-style: italic;
+      &:hover {
+        font-size: 4rem;
+        color: $danger;
+        text-decoration: overline;
+      }
+    }
+
+    .project1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      margin-top: 5rem;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      border: 5px solid $secondary;
+      margin-left: 5rem;
+      animation: up 3s 2 ease-out;
+      transition: 0.5s;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      box-shadow: 5px 5px 5px 2px $primary;
+
+      a {
+        text-decoration: none;
+        color: rgba(240, 248, 255, 0);
+
+        &:hover {
+          color: $secondary;
+          background-color: $danger;
+          width: 7rem;
+          height: 7rem;
+          border-radius: 50%;
+          transition: 0.5s;
+          padding: 35px 30px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    div:nth-of-type(1) {
+      background-image: url(../Images/image-header-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: down 2s 1 linear;
+
+      &:hover {
+        box-shadow: inset 5px 5px 15px 2px $primary;
+      }
+    }
+
+    div:nth-of-type(2) {
+      background-image: url(../Images/sweetBg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: down 2s 1 linear;
+
+      &:hover {
+        box-shadow: inset 5px 5px 15px 2px $primary;
+      }
+    }
+
+    div:nth-of-type(3) {
+      background-image: url(../Images/black-white.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: down 2s 1 linear;
+      &:hover {
+        box-shadow: inset 5px 5px 15px 2px $primary;
+      }
+    }
+  }
+
+  @keyframes down {
+    0% {
+      transform: translateY(60%) rotate(90deg);
+    }
+    50% {
+      transform: translateY(40%) rotate(0);
+    }
+  }
+}
+.project2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div:nth-of-type(1) {
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+    &:hover {
+      box-shadow: inset 5px 5px 15px 2px $primary;
+    }
+  }
+
+  div:nth-of-type(2) {
+    background-image: url(../Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+    &:hover {
+      box-shadow: inset 5px 5px 15px 2px $primary;
+    }
+  }
+  div:nth-of-type(3) {
+    background-image: url(../Images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear;
+    &:hover {
+      box-shadow: inset 5px 5px 15px 2px $primary;
+    }
+  }
+}
